@@ -335,6 +335,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     justify-content: center;
    
 }
+.footer .menu2{
+    text-align: center;
+}
+.footer .derechos{
+    text-align: center;
+}
 
 .footer .pagos{
     display: grid;
