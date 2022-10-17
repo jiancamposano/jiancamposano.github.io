@@ -40,8 +40,8 @@
   top: 15px;
   right: 0px;
   z-index: 2;
-  height: 60px;
-  width: 65px;
+  height: 45;
+  width: 45;
   background-color: rgb(47, 205, 47,.9);
   display: none;
 }
@@ -114,7 +114,18 @@
     height: 200px;
     background-size: cover;
 }
+.menu__link {
+  font-size: 15px;
+}
 
+.derechos #copyright{
+  font-size: 15px;
+}
+
+.redes .red a img {
+  height: 40px;
+  width: 40px;
+}
 
 }
 
@@ -124,6 +135,13 @@
     grid-template-columns: repeat(2,1fr) ;
     margin: 5px;
     gap: 3rem;
+  }
+
+  .menu__link {
+    font-size: 14px;
+  }
+  .derechos #copyright{
+    font-size: 14px;
   }
 }
 
