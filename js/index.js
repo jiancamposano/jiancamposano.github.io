@@ -1,8 +1,7 @@
 
 document.querySelector(".menu__btn").addEventListener("click", () => {
-  document.querySelector(".menu").classList.toggle("show");
+document.querySelector(".menu").classList.toggle("show");
 });
-
 
 const typed = new Typed(".typed", {
   strings: [

@@ -1,4 +1,3 @@
-
 .header {
   grid-area: header;
 }
@@ -34,19 +33,17 @@
     "footer"  
 }
 
-
 @media (max-width :976px){
   .img h3 {
     
     transform: translate(70px,-300px);
     transition: transform 0.3s , opacity 0.3s ;
-}
+  }
 
 .slow>div:hover h3{
     transform: translate(70px, -35px);
     opacity: 1;
-}
-
+  }
 }
 
 @media (max-width :620px){
@@ -79,18 +76,15 @@
     
     transform: translate(70px,-300px);
     transition: transform 0.3s , opacity 0.3s ;
-}
+  }
 
 .slow>div:hover h3{
     transform: translate(70px, -35px);
     opacity: 1;
-}
+  }
 }
 
 @media (min-width: 620px) {
-  
- 
- 
   .footer{
     display: flex;
     flex-direction: column;
@@ -102,16 +96,12 @@
     max-width: 500px;
     margin: 0 auto;
     display: flex;
-}
+  } 
 #imagen {
     width: 80%;
     height: 200px;
     background-size: cover;
-}
-
-
-
-
+  }
 }
 
 @media (min-width: 400px){
@@ -121,11 +111,7 @@
     margin: 5px;
     gap: 3rem;
   }
-
-  
 }
-
-
 
 @media (min-width: 976px) {
   .reserve{
@@ -157,9 +143,5 @@
     color: rgb(6, 76, 240);
     animation: alternate infinite color 1s;
     text-shadow: 0.180em 0.1em #333;
-  }
-
-  
-
-      
+  }  
 }

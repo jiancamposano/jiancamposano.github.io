@@ -12,7 +12,6 @@
   }
 
   .card__header{
-    /*padding-bottom: 3rem;*/
     color: rgb(6, 76, 240);
     animation: alternate infinite color 1s;
     text-shadow: 0.180em 0.1em #333;
@@ -20,8 +19,7 @@
 
 .card__title{
     font-weight: 700;
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px; 
   }
 
 .card__body{
@@ -35,13 +33,11 @@
 
 .card__subtitle{
     color: #d9d9d9;
-
-text-shadow: -1px -1px 1px rgba(111, 56, 56, 0.1), 1px 1px 1px rgb(255, 5, 5);
+    text-shadow: -1px -1px 1px rgba(111, 56, 56, 0.1), 1px 1px 1px rgb(255, 5, 5);
     font-weight: 600;
     width:  200px;
     letter-spacing: 2px;
     padding-bottom: 0.5rem;
-    
 }
 
 .card__text{
@@ -68,7 +64,6 @@ text-shadow: -1px -1px 1px rgba(111, 56, 56, 0.1), 1px 1px 1px rgb(255, 5, 5);
 }
 
 .hero-img__decorators{
-  
   position: absolute;
   top: 0;
   right: 0;
