@@ -1,3 +1,4 @@
+
 document.querySelector(".menu__btn").addEventListener("click", () => {
   document.querySelector(".menu").classList.toggle("show");
 });
@@ -27,82 +28,48 @@ const typed = new Typed(".typed", {
   contentType: "html", //html o. Inull paro texto stn formatos olomonte
 });
 
-  const IMAGENES = [
-    'assets/img/party1.jpg',
-    'assets/img/party2.jpg',
-    'assets/img/party3.jpg' 
-];
-const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
-let posicionActual = 0;
-let $botonRetroceder = document.querySelector('#retroceder');
-let $botonAvanzar = document.querySelector('#avanzar');
-let $imagen = document.querySelector('#imagen');
-let $botonPlay = document.querySelector('#play');
-let $botonStop = document.querySelector('#stop');
-let intervalo;
+const items = document.querySelectorAll('img');
+const itemCount = items.length;
+const nextItem = document.querySelector('.next');
+const previousItem = document.querySelector('.previous');
+let count = 0;
 
-// Funciones
+function showNextItem() {
+  items[count].classList.remove('active');
 
-/**
- * Funcion que cambia la foto en la siguiente posicion
- */
-function pasarFoto() {
-    if(posicionActual >= IMAGENES.length - 1) {
-        posicionActual = 0;
-    } else {
-        posicionActual++;
-    }
-    renderizarImagen();
+  if(count < itemCount - 1) {
+    count++;
+  } else {
+    count = 0;
+  }
+
+  items[count].classList.add('active');
+  console.log(count);
 }
 
-/**
- * Funcion que cambia la foto en la anterior posicion
- */
-function retrocederFoto() {
-    if(posicionActual <= 0) {
-        posicionActual = IMAGENES.length - 1;
-    } else {
-        posicionActual--;
-    }
-    renderizarImagen();
+function showPreviousItem() {
+  items[count].classList.remove('active');
+
+  if(count > 0) {
+    count--;
+  } else {
+    count = itemCount - 1;
+  }
+
+  items[count].classList.add('active');
+  console.log(count);
 }
 
-/**
- * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
- */
-function renderizarImagen () {
-    $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
+function keyPress(e) {
+  e = e || window.event;
+  
+  if (e.keyCode == '37') {
+    showPreviousItem();
+  } else if (e.keyCode == '39') {
+    showNextItem();
+  }
 }
 
-/**
- * Activa el autoplay de la imagen
- */
-function playIntervalo() {
-    intervalo = setInterval(pasarFoto, TIEMPO_INTERVALO_MILESIMAS_SEG);
-    // Desactivamos los botones de control
-    $botonAvanzar.setAttribute('disabled', true);
-    $botonRetroceder.setAttribute('disabled', true);
-    $botonPlay.setAttribute('disabled', true);
-    $botonStop.removeAttribute('disabled');
-
-}
-
-/**
- * Para el autoplay de la imagen
- */
-function stopIntervalo() {
-    clearInterval(intervalo);
-    // Activamos los botones de control
-    $botonAvanzar.removeAttribute('disabled');
-    $botonRetroceder.removeAttribute('disabled');
-    $botonPlay.removeAttribute('disabled');
-    $botonStop.setAttribute('disabled', true);
-}
-
-// Eventos
-$botonAvanzar.addEventListener('click', pasarFoto);
-$botonRetroceder.addEventListener('click', retrocederFoto);
-$botonPlay.addEventListener('click', playIntervalo);
-$botonStop.addEventListener('click', stopIntervalo);
-// Iniciar
-renderizarImagen();
+nextItem.addEventListener('click', showNextItem);
+previousItem.addEventListener('click', showPreviousItem);
+document.addEventListener('keydown', keyPress);
