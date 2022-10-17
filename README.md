@@ -1,2 +1,0 @@
-# jiancamposano.github.io
-Portafolio

@@ -1,0 +1,28 @@
+@import url('./modules/variables.css');
+@import url('./modules/header.css');
+@import url('./modules/nav.css');
+@import url('./modules/container.css');
+@import url('./modules/menu.css');
+@import url('./modules/section.css');
+@import url('./modules/card.css');
+@import url('./modules/animation.css');
+@import url('./modules/article.css');
+@import url('./modules/footer.css');
+@import url('./modules/grid.css');
+@import url('./modules/whatsapp.css');
+@import url('./modules/courusel.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--primary-font-family);
+    background-color: var(--primary-temp-color);
+}
+
+
+
+

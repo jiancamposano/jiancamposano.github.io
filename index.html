@@ -1,207 +1,169 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  HOJA DE ESTILOS  -->
-    <link rel="stylesheet" href="style.css">
-
-
+    <!-- link to styles  -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="assets/icons/freddy.png" type="image/x-icon">
+    <!-- Link fonts google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     
 
-
-    <script src="https://kit.fontawesome.com/7a25bedc73.js" crossorigin="anonymous"></script>
-    <!--  ICON FAVICON  -->
-    <link rel="icon" type="image/jpg" href="img/apple-icon-57x57.png"/>
-    <title>JCthenology</title>
-    <!--  IMAGENES  -->
-   
-    <!--  <a href='https://dryicons.com/free-icons/facebook-icons'> </a> -->
-    <!--  GOOGLE FONTS  -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
-    
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <title>Halloween</title>
 </head>
-<body>
-
-    <div class="contenedor">
-
-        <header class="hero">
-
-            <nav class="nav " id="nav">
-              <img src="img/jotac.JPG" class="nav__logo" alt="">
-    
-                <ul class="nav__links">
-    
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Inicio</a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Servicio</a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Cliente</a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Contacto</a>
-                    </li>
-    
-                </ul>
-    
-                <a href="#nav" class="nav__hamburguer">
-                    <img src="./img/menu.png" class="nav__icon">
+<body class="grid-container">
+  <header class="header">
+      <nav class="nav">
+          <div class="container">
+                 <a href="">
+                  <img src="./assets/icons/boo.png" alt="Logo boo" 
+                    class="nav__logo" />
                 </a>
-    
-                <a href="#" class="nav__close">
-                    <img src="./img/close.png" class="nav__icon">
-                </a>
-    
-            </nav>
-            
-        </header>
-
-
-
-        <a href="https://wa.me/+34641327487?text=Que informacion deseas ?" class="btn-wsp" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-
-      
-       <main class="main">
-            <div class="lento part">
-                <div class="lento uno">
-                    <div class="img">
-                        <div> 
-                            <img class="breakpoint" src="img/soporte tecnico.jpeg" alt="">
-                        </div>
-                    <h3>Soporte</h3>
+                <button class="menu__btn">
+                    <img src="assets/img/menu.png" alt="menu">
+                </button>
+                    <div class="nav__main">
+                        <ul class="menu ">
+                            <li>
+                                <a href="#section" class="menu__link">Inicio</a>
+                            </li>
+          
+                            <li>
+                                <a href="#events" class="menu__link">Eventos</a>
+                            </li>
+          
+                            <li>
+                                <a href="#courusel" class="menu__link">Fotos</a>
+                            </li>
+                          </ul>
                     </div>
-                </div>
-        
-                <div class="lento uno">
-                    <div class="img">
-                        <div> 
-                            <img class="breakpoint" src="img/publicidad online.jpeg" alt="">
-                        </div>
-                        <h3>Publicidad</h3>
-                    </div>
-                </div>
+          </div>
+      </nav>
+  </header>
 
-                <div class="lento uno">
-                    <div class="img">
-                        <div> 
-                            <img class="breakpoint" src="img/diseño de paginas web.png" alt="">
-                        </div>
-                        <h3>Paginas web</h3>
-                    </div> 
-                </div>
-
-            
-                <div class="lento uno">
-                    <div class="img">
-                        <div> 
-                            <img class="breakpoint" src="img/programacion a medida.png" alt="">
-                        </div>
-                        <h3>Programacion</h3>
-                    </div> 
-                </div>           
-            </div>    
-
-            
-       </main>
-
-        <div class="elegir">
-            <h3>	¡PORQUE ELEGIRNOS! </h3>
-        </div>
-
-        <div class="area">
-            <div>
-                <i class="fa-regular fa-clock fa-8x"></i>
-                <h3>Rapidez</h3>
-                <p>Nuestra asistencia le dara una solucion a su problema o consulta sin hacerle perder tiempo</p>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-user fa-8x"></i>
-               
-                <h3>Personalizado</h3>
-                <p>Recibira un contacto personalizado enfocado en su consulta sin respuesta automaticas y con la atencion de un tecnico</p>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-phone-volume fa-8x"></i>
-                <h3>Atencion</h3>
-                <p>Un servicio personal llevado a cabo por nuestros tecnicos en soporte</p>
-            </div>
-
-            <div>
-                <i class="fa-regular fa-handshake fa-8x"></i>
-                <h3>Facilidad</h3>
-                <p>Sin nesesidad de conocimientos de soporte nosotros le brindamos asesorarlos para facilitar la consulta</p>
-            </div>
-        </div>
-
-        <div class="redessociales">
-            <div class="imagen">
-              <a href=""> <img src="img/fbb.png" alt=""></a>
-            </div>
-
-            <div  class="imagen">
-                <a href=""><img src="img/insta.png" alt=""></a>
-            </div>
-
-            <div  class="imagen">
-               <a href="https://wa.me/+34641327487?text=Que informacion deseas ?" target="_blank"> <img src="img/wasap.png" alt=""></a>
-            </div>
-        </div>
-
-
-        <footer class="footer">
-            
-
-            <div class="menu2">
-                <ul>
-                   <a href="" class="nav__link"> <li>Inicio</li></a>
-                   <a href="" class="nav__link"> <li>Servicios</li></a>
-                   <a href="" class="nav__link"><li>Clientes</li></a>
-                   <a href="" class="nav__link"> <li>Contacto</li></a>
-                </ul>
-           </div>
-
-            <div class="derechos">
-                <h3>Derechos reservados JC</h3>
-            </div>
-            
-            <div class="pagos">
-                <div>
-                    <a href=""> <img src="img/app store.jpg" alt=""></a>
-                 </div>
-
-                <div>
-                    <a href=""><img src="img/google play.jpg" alt=""></a>
-                </div>
-
-                <div>
-                   <a href=""> <img src="img/app store.jpg" alt=""></a>
-                </div>
-            </div>
-
+  <article class="section" id="section">
+    <div class="container">
+        <figure class="hero-img__decorators">
+            <img src="./assets/icons/ghost.png" alt="Logo HTML 5" width="64" height="64"
+                 class="hero-img__decorator" />
+            <img src="./assets/icons/ghost.png" alt="Logo HTML 5" width="64" height="64"
+                 class="hero-img__decorator" />
+        </figure>
+        <div class="card">
            
-        </footer>
-
-
+            <div class="card__header">
+                <h1 class="card__title">Disco Nocturna </h1>
+                
+            </div>
+            <div class="card__body">
+                <div>
+                    <h2 class="card__subtitle">Tematica Halloween </h2>
+                </div>
+                <div>
+                    <p class="card__text"><span class="typed"></span> </p>
+                </div>
+            </div>
+            <div class="card__footer">
+                <div class="buttons">
+                    <a href="https://wa.me/+34641327487?text=Bienvenido a Disco Nocturna"  target="_blank">
+                        <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="button__whatsapp">
+                    </a>
+                </div>
+            </div>  
+        </div> 
     </div>
-    
+</article>
+
+<div class="photos">
+        <h3 class="phtos__title">¡Eventos Proximos Reserva! </h3>
+</div>
+
+<article class="section-reserve" id="events">
+    <div class="reserve slow">
+        <div class="img slow">
+            <img class="breakpoint" src="assets/img/mano.jpg" alt="" >
+            <h3>hand</h3>
+        </div>
+        <div class="img slow">
+            <img class="breakpoint" src="assets/img/happyHalloween.jpg" alt="" >
+            <h3>Halloween</h3>
+        </div>
+        <div  class="img slow">
+            <img class="breakpoint" src="assets/img/pareja.jpg" alt="" >
+            <h3>costumes</h3>
+        </div>
+        <div class="img slow">
+            <img  class="breakpoint" src="assets/img/lunaLlena.jpg" alt="" >
+            <h3>full moon</h3>
+        </div>
+    </div>
+</article>
+
+<div  class="whatsApp">
+    <a href="https://wa.me/+34641327487?text=Bienvenido a Disco Nocturna " class="btn-wsp" target="_blank"> <img src="assets/icons/whatsapp2.png" alt=""></a>
+ </div>
 
 
+ <div class="courusel_main" id="courusel">
+    <div class="carousel">
+        <button id="retroceder"><</button>
+        <div id="imagen"></div>
+        <button id="avanzar">></button>
+    </div>
+    <div class="controles">
+        <button id="play">Play</button>
+        <button id="stop" disabled>Stop</button>
+    </div>
+ </div>
+ <img src="assets/img/party1.jpg" style="display: none">
+ <img src="assets/img/party2.jpg" style="display: none">
+ <img src="assets/img/party3.jpg" style="display: none">
+ 
+  <footer class="footer">
+    <ul class="menu">
+        <li>
+            <a href="" class="menu__link">Inicio</a>
+        </li>
 
+        <li>
+            <a href="" class="menu__link">Eventos</a>
+        </li>
 
+        <li>
+            <a href="" class="menu__link">Fotos</a>
+        </li>
+    </ul>
 
-    
-    <script src="main.js"></script>
+    <div class="redes">
+       <div class="red">
+            <a href=""><img src="assets/icons/linkedin.png" alt="linkedin" ></a>
+       </div>
+       <div class="red">
+            <a href=""><img src="assets/icons/facebook.png" alt="facebook"></a>
+      </div>
+      <div class="red">
+            <a href=""><img src="assets/icons/youtube2.png" alt="youtube"></a>
+      </div>
+    </div>
+      <div class="derechos">
+            <div id="copyright">Copyright&copy; 2022 - Creado por JC</div>
+    </div>
+   
+  </footer>
+  <!--https://scrollrevealjs.org/guide/hello-world.html-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--typed.js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

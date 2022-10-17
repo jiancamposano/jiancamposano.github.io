@@ -1,0 +1,8 @@
+.nav__logo {
+    height: 60px;
+    width: 80px;
+}
+
+.nav__main ul.menu.show  {
+    transform:translateX(-46px) ; 
+}
