@@ -12,7 +12,7 @@
   }
 
   .card__header{
-    padding-bottom: 3rem;
+    /*padding-bottom: 3rem;*/
     color: rgb(6, 76, 240);
     animation: alternate infinite color 1s;
     text-shadow: 0.180em 0.1em #333;

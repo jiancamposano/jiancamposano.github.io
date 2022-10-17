@@ -1,0 +1,7 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-font-family: 'Montserrat', monospace;
+    --primary-temp-color: #2b302c;
+    --primary-links-color: #ffffff;
+    --links-color-hover:#529ef5;
+  }

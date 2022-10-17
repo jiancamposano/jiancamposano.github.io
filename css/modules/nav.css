@@ -1,3 +1,16 @@
+
+.menu__btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 0px;
+    z-index: 2;
+    background-color: rgb(14, 200, 26);
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+    display: none;
+  }
+  
 .nav__logo {
     height: 60px;
     width: 80px;

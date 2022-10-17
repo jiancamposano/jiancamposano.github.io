@@ -10,7 +10,7 @@
 	padding: 0;
 	width: 500%;
 	
-	animation: slide 20s infinite alternate ease-in-out;
+	animation: slide 10s infinite alternate ease-in-out;
 }
 
 .slider-frame li {

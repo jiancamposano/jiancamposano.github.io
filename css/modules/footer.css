@@ -13,6 +13,10 @@
     align-items: center;
     gap: 1.2rem;
 }
+.redes .red a img{
+    height: 40px;
+    width: 40px;
+}
 
 .derechos{
     display: grid;
