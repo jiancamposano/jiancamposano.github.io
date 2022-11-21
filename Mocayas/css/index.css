@@ -32,6 +32,7 @@ header {
   transition: 0.4s;
   font-size: 0.7rem;
   letter-spacing: 1px;
+ 
 }
 
 .mostrar-menu,
@@ -50,7 +51,7 @@ header {
 .mostrar-menu:hover,
 .esconder-menu:hover {
   color: aqua;
-  
+  border-bottom: 1px solid aqua;
 }
 
 #check {
@@ -108,6 +109,7 @@ header {
     color: #818191;
     font-size: 0.7rem;
     margin: 15px 0px;
+    font-size: 12px;
 }
 
 .boton-saber-mas{
