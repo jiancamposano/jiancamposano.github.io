@@ -1,3 +1,12 @@
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  /* Array con las imagenes y enlaces que se iran mostrando en la web */   
   let imagenes=new Array(
     ['img/slide1.jpg'],
@@ -21,3 +30,4 @@ onload=function(){
     // Indicamos que cada 5 segundos cambie la imagen
     setInterval(rotarImagenes,1500);
 }
+
