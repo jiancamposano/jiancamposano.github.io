@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+textarea {
+    resize: none;
+}
+
 /* HEADER */
 
 header {
@@ -237,7 +241,7 @@ form textarea{
     border: 2px solid #8dcca9;
     padding: 10px 5px;
     outline: 0;
-    color: rgb(84, 73, 73);
+    color: rgb(130, 110, 110);
     width: 100%;
 }
 
@@ -249,7 +253,7 @@ form textarea:focus{
 
 form input::placeholder,
 form textarea::placeholder{
-    color: #fff;
+    color: rgb(154, 137, 137);
 }
 
 .mensaje{
@@ -258,12 +262,20 @@ form textarea::placeholder{
     padding: 10px;
 }
 
+
+.boton-formulario{
+    padding-left: 15px;
+}
+
 .boton-formulario .boton-saber-mas{
     display: block;
     border: 1px solid white;
-    color: white;
+    color: rgb(118, 107, 107);
     text-align: center;
     transition: 0.4s;
+    font-weight: 600;
+    text-transform: uppercase;
+   
 
 }
 
