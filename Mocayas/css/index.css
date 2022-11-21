@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 textarea {
@@ -21,6 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
   
 }
 
@@ -130,44 +132,19 @@ header {
  /* FLECHA ARRIBA */
  .btn-flecha{
     position:fixed;
-   
-    width:100%;
-    height:0px;
-    line-height: 55px;
-    bottom:14%;
-    right:42%;
-    background:#25d366;
-    color:#FFF;
+    width:60px;
+    height:60px;
+    bottom:32px;
     border-radius:50px;
-    text-align:center;
-    font-size:60px;
-    box-shadow: 8px 1px 10px rgba(0,0,0,0.3);
     z-index:100;
     transition: all 300ms ease;
-    
     }
 
-.btn-flecha:hover{
-    background: #20ba5a;
- }
 
  .btn-flecha img{
     width: 80px;
     height: 80px;
-    animation: popup .3s ease-in-out; 
  }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -178,7 +155,7 @@ header {
    width: 99vw;
   /*  height: 100vh; */
    max-width: 1700px;
-   min-width: 280px;
+   min-width: 200px;
    margin: auto;
   
    
@@ -458,13 +435,27 @@ box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
 
 /* ASOCIADOS */
 .asociados{
-    padding: 40px;
+    padding-top: 0.5rem;
+    width: 99vw;
+   /*  height: 100vh; */
+    max-width: 1700px;
+    min-width: 200px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr) ;
     justify-content: center;
     text-align: center;
     gap: 1rem;
 }
+
+.asociados img{
+    width: 100%;
+   
+}
+
+
+ 
+ 
 
 
 /* FOOTER */
@@ -596,5 +587,14 @@ footer p{
 @media (max-width: 350px){
     header{
         padding: 0px 25px;
+    }
+}
+
+
+@media (max-width: 280px){
+    .header{
+        padding-top: 20px;
+        height: 120px;
+      flex-direction: column;
     }
 }
