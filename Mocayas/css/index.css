@@ -22,14 +22,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
-  
 }
 
 
 .logo {
   height: 75px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .menu a {
@@ -132,9 +130,10 @@ header {
  /* FLECHA ARRIBA */
  .btn-flecha{
     position:fixed;
+    cursor: pointer;
     width:60px;
     height:60px;
-    bottom:32px;
+    bottom:31px;
     border-radius:50px;
     z-index:100;
     transition: all 300ms ease;
@@ -265,7 +264,7 @@ header {
 .contenido-iconos h6{
     color: white;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 500;
     margin: 10px 0px;
 }
 
@@ -280,7 +279,7 @@ header {
 }
 
 .contenido-iconos i{
-    color: #1d5f3a;
+    color: #2c7c4f;
 }
 
 
@@ -379,8 +378,8 @@ form textarea::placeholder{
     width:60px;
     height:60px;
     line-height: 55px;
-    bottom:25px;
-    right:25px;
+    bottom:23px;
+    right:12px;
     background:#25d366;
     color:#FFF;
     border-radius:50px;
@@ -395,11 +394,6 @@ form textarea::placeholder{
     background: #20ba5a;
  }
  
-
-
-
-
-
  /* SUCURSALES */
 
  .titulo-sucursales{
@@ -418,8 +412,8 @@ form textarea::placeholder{
     font-weight: 900;
     letter-spacing: 5px;
     -webkit-box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
--moz-box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
-box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
+   -moz-box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
+   box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
  }
 
 .ubicacion-sucursal{
@@ -436,7 +430,7 @@ box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
 /* ASOCIADOS */
 .asociados{
     padding-top: 0.5rem;
-    width: 99vw;
+    width: 65vw;
    /*  height: 100vh; */
     max-width: 1700px;
     min-width: 200px;
@@ -453,24 +447,81 @@ box-shadow: 11px 11px 21px -3px rgba(0,0,0,0.57);
    
 }
 
-
- 
+/* ENLACES DE INTERES */
+.titulo-enlaces{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background-color: #eaeaf9;
+    letter-spacing: 5px;
+    
+}
+ .enlaces{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+    background-color: #fffbfb;
+    
+ }
+ .enlace{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+ }
+ .enlace a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+ }
+ .enlace a img{
+    height: 100px;
+    width: 120px;
+ }
+ .enlace a img:hover{
+    height: 120px;
+    width: 140px;
+    opacity: 1;
+ }
+ .enlace a:hover{
+    border: 1px solid white;
+    color: rgb(160, 87, 87);
+    font-size: 17px;
+    font-weight: 700;
+ }
  
 
 
 /* FOOTER */
 
 footer{
-    background: #4d4d5c;
+    display: flex;
+   
+    justify-content: space-around;
+    text-align: center;
+    gap: .5rem;
+    background: #4b4b57;
+
 }
 
-footer p{
+footer p,
+footer h4{
     color: white;
-    font-size: 1rem;
+    font-size: 12px;
     text-align: center;
-    height: 40px;
-    font-weight: 300;
-    line-height: 40px;
+    height: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    
 }
 
 /* RESPONSIVE */
@@ -583,6 +634,21 @@ footer p{
     #personas{
         grid-template-columns: 1fr;
     }
+
+    /* ENLACES DE INTERES */
+    .enlace a{
+        font-size: 14px;
+        gap: 0.5rem;
+     }
+     /* FOOTER */
+
+    footer{
+       flex-direction: column ;
+    }
+    footer h4,
+    footer p{
+        font-size: 8px;
+    }
 }
 @media (max-width: 350px){
     header{
@@ -596,5 +662,9 @@ footer p{
         padding-top: 20px;
         height: 120px;
       flex-direction: column;
+    }
+    footer h4,
+    footer p{
+        font-size: 7px;
     }
 }
