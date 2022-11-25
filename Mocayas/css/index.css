@@ -555,7 +555,7 @@ footer h4{
     text-align: center;
     padding: 25px;
     margin: 0 auto;
-    background-color: #eaeaf9;
+    background-color: ghostwhite;
   
 }
 
@@ -609,6 +609,141 @@ footer h4{
     width: 100%;
     height: 90%;
 }
+
+
+/* NUESTRA EMPRESA */
+.empresa-titulo{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background-color: #d1d1d9;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #205b39;
+    font-size: 1.5rem;
+}
+
+.empresa h3{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c7c4f;
+   
+}
+.empresa{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+
+}
+
+.empresa-img{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    justify-content: space-around;
+    width: 82vw;
+    /*  height: 100vh; */
+     max-width: 1100px;
+    min-width: 200px;
+    margin: auto;
+   
+   
+}
+
+
+.empresa-img img{
+    width: 100%;
+    height: 90%;
+}
+
+/* MIISION VISION */
+.titulo-mision-vision{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background-color: #d1d1d9;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #205b39;
+    font-size: 1.5rem;
+}
+
+.mision-vision{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color:ghostwhite ; 
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+   
+}
+
+.mision-vision h3{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 23px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: #2c7c4f;
+}
+
+.mision-vision p{
+    
+    padding: 13px;
+    
+}
+
+.objetivo{
+   
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        gap: 1rem;
+        width: 85%;
+        margin: 0 auto;
+        justify-content: center;
+        background-color:ghostwhite ; 
+        gap: 1rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+    
+}
+
+
+.objetivo h3{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c7c4f;
+    
+}
+ 
+
+
+.objetivo-titulo{
+    display: grid;
+}
+
+
+
+
 
 
 
@@ -691,6 +826,18 @@ footer h4{
 .s1-c2{
     padding-left: 45px;
 }
+
+
+/* mision vision */
+ .mision-vision{
+    grid-template-columns: 1fr;
+ }
+
+ .objetivo{
+    grid-template-columns: 1fr;
+ }
+
+
 }
 
 
@@ -723,6 +870,9 @@ footer h4{
         
     }
 
+    .empresa-img{
+        height: 120px;
+    }
  
     
     
@@ -766,12 +916,29 @@ footer h4{
     footer p{
         font-size: 8px;
     }
+
+    /* mision vision */
+    .empresa-titulo{
+        font-size: 1rem;
+        padding: 25px;
+    }
+
+    .titulo-mision-vision{
+        font-size: 1rem;
+        padding: 25px;
+    }
 }
 @media (max-width: 350px){
     header{
         padding: 0px 25px;
     }
 }
+@media (max-width: 320px){
+    .empresa-img{
+        height: 140px;
+    }
+}
+
 
 
 @media (max-width: 280px){

@@ -42,7 +42,7 @@
 
         <nav class="menu">
             <a href="index">Inicio</a>
-            <a href="#">Nuestra Empresa</a>
+            <a href="nuestraempresa">Nuestra Empresa</a>
             <a href="contactanos">Contacto</a>
             <a href="servicios">Servicios</a>
             <a href="#">Trazabilidad</a>

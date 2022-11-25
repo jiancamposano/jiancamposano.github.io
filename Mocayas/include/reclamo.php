@@ -17,7 +17,7 @@
                     <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required>
                 </div>
 
-                <div class="empresa">
+                <div class="empresaa">
                     <label for="empresa">Empresa</label>
                     <input type="text" name="empresa" id="empresa" placeholder="Empresa" required>
                 </div>

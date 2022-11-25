@@ -18,7 +18,7 @@
           <p>Nuestra responsabilidad se sustenta en la seriedad y cumplimiento en nuestro trabajo,
              dándoles la seguridad y firmeza en el cumplimiento de nuestra gestión en el tiempo y
               plazos programados, con ello ahorramos gastos innecesarios.</p>
-          <a href="#" class="boton-saber-mas">Saber Más</a>
+          <a href="servicios" class="boton-saber-mas">Saber Más</a>
         </div>
 
         <div>
@@ -29,7 +29,7 @@
                 gestiones aduaneras, la dedicación y el esmero  para cumplir con nuestro 
                 cometido de brindar un servicio eficiente y de calidad que satisfaga 
                 las exigencias de nuestros clientes.</p>
-            <a href="#" class="boton-saber-mas">Saber Más</a>
+            <a href="servicios" class="boton-saber-mas">Saber Más</a>
         </div>
 
         <div>
@@ -40,7 +40,7 @@
                 tal persona en exclusividad se encarga de la atención de los despachos, 
                 suministrando al mismo tiempo la información directa e inmediata de la gestión 
                 encomendada.</p>
-            <a href="#" class="boton-saber-mas">Saber Más</a>
+            <a href="servicios" class="boton-saber-mas">Saber Más</a>
         </div>
 
 
@@ -53,7 +53,7 @@
                  establecidas; métodos y disposiciones que son cumplidas por todo el personal, 
                   permitiéndonos  que nuestra empresa  se mantenga  en estatus  relevante y  de
                    manera sostenida.</p>
-            <a href="#" class="boton-saber-mas">Saber Más</a>
+            <a href="servicios" class="boton-saber-mas">Saber Más</a>
         </div>
     </section>
 
