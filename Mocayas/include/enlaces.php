@@ -9,7 +9,7 @@
             <a href="https://www.gob.pe/promperu" target="_blank">Promperu</a>
             <a href="https://www.gob.pe/pcn" target="_blank">Plan Copesco</a>
             <a href="https://ww3.sunat.gob.pe/cl-ad-ittipocambioconsulta/TipoCambioS01Alias?accion=consultarTipoCambio" target="_blank">Tipo de Cambio</a>
-            <a href=""><img src="img/libroReclamaciones.jpeg" alt=""></a>
+            <a href="libroredeclamaciones"><img src="img/libroReclamaciones.jpeg" alt=""></a>
         </div>
     </section>
     
