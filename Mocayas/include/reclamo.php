@@ -1,6 +1,6 @@
 <section id="contacto">
         <h4>Ingrese su Reclamo</h4>
-        <form action="https://formsubmit.co/customer@mocayasaduanera.com" method="POST">
+        <form action="https://formsubmit.co/jiancamposano17@gmail.com" method="POST">
             <div class="datos-form">
                 <div class="nombre">
                     <label for="nombre">Nombre</label>
