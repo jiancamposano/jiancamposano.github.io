@@ -155,11 +155,12 @@ color: rgb(32 138 74);
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  height: 20px;
+  /* height: 20px; */
   gap: 2rem;
   font-family: Caveat;
   color: rgb(32 138 74);
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+  background-color: rgb(203, 236, 232);
 }
 
 .footer h3 {
@@ -248,13 +249,13 @@ color: rgb(32 138 74);
   header {
     display: flex;
     flex-direction: column;
-    height: 170px;
+    height: 150px;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
   }
   body{
-    padding-top: 170px;
+    padding-top: 150px;
 }
   .banner{
     padding-top: 150px;
@@ -268,6 +269,12 @@ color: rgb(32 138 74);
     justify-items: center;
   }
 
+  .logo img{
+    width: 170px;
+    height: 120px;
+   
+  }
+
   .menu ul {
     gap: .9rem;
   }
@@ -275,8 +282,34 @@ color: rgb(32 138 74);
   .footer{
     display: flex;
     flex-direction: column-reverse;
-   
+   gap: .2rem;
+   padding: 5px 5px;
   }
 
+  .nosotros {
+    width: 100%;
+    padding: 40px 0px;
+  }
 
+  .nosotros .titulo-nosotros{
+    width: 75%;
+  }
+  .nosotros .description-nosotros{
+    width: 65%;
+  }
+
+  .nosotros .imagen-nosotros {
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+
+}
+
+@media (max-width: 550px){
+  .footer h3 {
+    font-size: 1rem;
+  }
+  .footer .redes {
+    font-size: 1rem;
+  }
 }
