@@ -244,6 +244,62 @@ color: rgb(32 138 74);
   padding-top: 50px;
  }
 
+  /*   --------------  SERVICIOS  -------------   */
+
+  .servicios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .servicios .imagen-diseno {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .servicios .imagen-diseno img {
+    width: 80%;
+  }
+
+  .servicios .diseno-info{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    justify-content: start;
+    padding-top: 2rem ;
+    gap: .5rem;
+    
+    
+  }
+
+  .titulo-diseno{
+    color: rgb(32 138 74);
+  font-weight: bold;
+  font-size: .9rem;
+  font-family: Trade Winds;
+  letter-spacing: 1px;
+  text-align: center;
+
+  }
+
+  .check{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding-top: 10px;
+  }
+
+  .descripcion-diseno{
+    font-family: Comic Neue;
+    text-align: justify;
+    font-size: .9rem;
+    gap: .5rem;
+  }
+
+
 
 @media (max-width: 850px) {
   header {
@@ -303,6 +359,22 @@ color: rgb(32 138 74);
     padding-bottom: 5px;
   }
 
+
+
+}
+
+@media (max-width: 700px){
+  .servicios{
+padding:0rem 1rem;
+  }
+
+  .titulo-diseno{
+    font-size: .7rem;
+  }
+
+  .descripcion-diseno{
+    font-size: .7rem;
+  }
 }
 
 @media (max-width: 550px){
@@ -311,5 +383,15 @@ color: rgb(32 138 74);
   }
   .footer .redes {
     font-size: 1rem;
+  }
+
+  .servicios{
+    grid-template-columns: 1fr;
+    
+  }
+  .servicios:nth-child(2n){
+    
+   display: flex;
+   flex-direction: column-reverse;
   }
 }
