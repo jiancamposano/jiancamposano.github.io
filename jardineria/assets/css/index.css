@@ -210,7 +210,7 @@ color: rgb(32 138 74);
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+  margin-top: 1.5rem;
  }
 
  .titulo-nosotros {
@@ -277,7 +277,7 @@ color: rgb(32 138 74);
     display: flex;
     flex-direction: column;
     padding: 5px 10px;
-    justify-content: start;
+    justify-content: center;
     padding-top: 2rem ;
     gap: .5rem;
     
@@ -569,28 +569,21 @@ padding:0rem 1rem;
    flex-direction: column-reverse;
   }
 
-
   .nombre-email{
     flex-direction: column;
     width: 100%;
   }
-
   
 .nombre,.email,.telefono,.ciudad,.select,.radio{
   width: 100%;
-
 }
 
 .select,.radio,.check-box, submit {
-
 width: 100%;
-
 }
 
 .check-box{
-
 width: 100%;
-
 }
 
 
