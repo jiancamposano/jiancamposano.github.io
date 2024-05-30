@@ -108,6 +108,12 @@ header {
   font-family: Protest Riot;
   border: 3px solid white;
   margin-top: .6rem;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .banner button:hover {
