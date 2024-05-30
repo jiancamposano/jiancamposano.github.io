@@ -404,6 +404,10 @@ form{
         display: flex;
         flex-direction: column;
     }
+    .header .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
     .nombre-email{
         flex-direction: column;
         width: 100%;
