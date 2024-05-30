@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: #e9bd8bb9;
+}
+.header{
+    
+    width: 100%;
+    background-image: url(img/banner.jpg);
+    height: 100vh;
+    font-size: 1.5rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Encode Sans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    gap: 1rem;
+    font-weight: 100;
+}
+
+.header h1{
+    font-weight: 100;
+}
+.nav{
+    backdrop-filter: blur(30px);
+    padding: .5rem;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.nav ul li {
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+}
+.nav ul li a:hover{
+   border-bottom: 1.5px solid white;
+}
+.main {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+
+.curso1,.curso2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: blue;
+    background-color: #965d3d;
+    background-image: linear-gradient(62deg, #965d3d 0%, #d8ad3f 100%);
+    font-family: Comic Neue;
+    border-radius: 1rem;
+    border: 2px solid brown;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.curso1 h3,.curso2 h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.curso1 h4,.curso2 h4{
+    font-size: 1.4rem;  
+}
+.curso1 span,.curso2 span{
+    font-size: 1.4rem; 
+    font-weight: bold; 
+}
+
+.button{
+    font-size: 1rem;
+  padding: 5px;
+  color: white;
+  background-color: #d4852ab9;
+  cursor: pointer;
+  font-family: Comic Neue;
+  border: 3px solid white;
+  margin-top: .6rem;
+}
+
+.button:hover{
+    background-color: #e66114;
+}
+
+
+/* ---------- BLOG --------- */
+
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+.blog img{
+    width: 80%;
+    height: 150px;
+}
+
+.blog1,.blog2,.blog3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    gap: 1rem;
+    width: 30%;
+    border-radius: 1rem;
+    border: 2px solid brown;
+    padding: 1rem;
+    font-family: Comic Neue;
+}
+.blog-titulo{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    font-family: Comic Neue;
+   
+}
+
+/* ---------- FOOTER --------- */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #965d3d;
+    font-family: Encode Sans;
+    font-size: .550rem;
+    letter-spacing: 1px;
+    color: white;
+    padding: 1rem;
+    font-weight: lighter;
+    gap: 1rem;
+    border-top-left-radius: 2.2rem;
+    border-top-right-radius: 2.2rem;
+}
+
+.footer .nav ul {
+   font-size: 1.2rem;
+}
+
+.footer h1{
+    font-size: 1.9rem;
+    font-weight: 100;
+    font-family: Encode Sans;
+}
+
+
+/* ---------- SOBRE NOSOTROS --------- */
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+    margin: auto;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 2rem 0rem;
+    font-family: Comic Neue;
+    
+}
+.nosotros .texto {
+    text-align: justify;
+}
+
+.nosotros img{
+   width: 60%;
+}
+
+/* ---------- CONTÁCTO --------- */
+.contacto {
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+    margin: auto;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 2rem 0rem;
+    font-family: Comic Neue;
+    
+}
+.contacto .texto {
+    text-align: justify;
+}
+
+.contacto img{
+   width: 68%;
+}
+
+
+/* formulario */
+
+form{
+    width: 90%;
+   display: flex;
+    background-color: rgba(167, 102, 102);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    font-family: Comic Neue;
+}
+::placeholder {
+  font-family: Comic Neue;
+  color: rgba(167, 102, 102);
+  
+}
+.formulario .imagen-diseno {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.form-contacto{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  gap:1.5rem;
+  margin-bottom: .8rem;
+}
+
+.form-entrada{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.formulario .formulario-diseno img {
+  width: 80%;
+  height: 70%;
+}
+
+.formulario-diseno{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario{
+  display: flex;
+  width: 100%;
+  padding: 5px 10px;
+  justify-content: center;
+  padding-top: 2rem ;
+  gap: .5rem;
+  
+
+}
+.info-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 90%;
+    padding-top: 1rem;
+ 
+}
+.titulo-form {
+ 
+    height: 50px;
+    font-size: 2rem;
+   
+}
+.nombre-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: .8rem;
+ 
+}
+
+.nombre,.email,.telefono,.ciudad,.select,.radio{
+    width: 50%;
+    height: 35px;
+}
+
+.select,.radio,.check-box, submit {
+  display: flex;
+  width: 50%;
+  height: 35px;
+  font-family: Comic Neue;
+  color: rgb(0, 0, 0);
+}
+
+.check-box{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: .1rem;
+}
+.info-form textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.info-form .button{
+    width: 100px;
+   height: 30px;
+   background-color: rgba(167, 102, 102);;
+}
+
+
+@media (max-width: 800px){
+    .blog{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .blog1,.blog2,.blog3{
+        width: 90%;
+       
+     
+    }
+    .blog img{
+        width: 80%;
+        height: 30%;
+    }
+}
+@media (max-width: 700px){
+.formulario{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .form-entrada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+
+  }
+  .formulario-diseno{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+}
+.radio{
+  justify-content: space-around;
+}
+
+@media (max-width: 600px){
+    .cursos {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .curso1,.curso2{
+        width: 100%;
+       
+    }
+    .footer .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nombre-email{
+        flex-direction: column;
+        width: 100%;
+      }
+      
+    .nombre,.email,.telefono,.ciudad,.select,.radio{
+      width: 100%;
+    }
+    
+    .select,.radio,.check-box, submit {
+    width: 100%;
+    }
+    
+    .check-box{
+    width: 100%;
+    }
+}
