@@ -71,7 +71,7 @@ header {
 
 .banner {
   width: 100%;
-  background-image: url(../img/jardin-banner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url(../img/jardin-banner.jpg);
   height: 100vh;
   background-position: center;
   background-attachment: fixed;
