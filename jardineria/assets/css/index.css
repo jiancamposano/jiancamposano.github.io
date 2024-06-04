@@ -159,6 +159,7 @@ color: rgb(32 138 74);
 .info-imagen img {
   width: 300px;
   height: 300px;
+  object-fit: cover;
 }
 
 /*   --------------  FOOTER  -------------   */
