@@ -1,0 +1,609 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-principal : #0082ff;
+  --texto-principal : Trade Winds; 
+  --texto-secundario : Protest Riot;
+}
+body{
+    padding-top: 105px;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 105px;
+  background-color: var(--color-principal);
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.logo {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  width: 25%;
+}
+
+
+.logo img {
+  height: 90px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  /* color: rgb(32 138 74); */
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: var(--texto-principal);
+  letter-spacing: 2px;
+  padding: 2px;
+}
+
+.menu ul li a:hover{
+  border-bottom: 2px solid rgb(0, 217, 255);
+  color: rgb(0 217 255);
+}
+
+
+/*   --------------  BANNER  -------------   */
+
+.banner {
+  width: 100%;
+  background-image: url(../img/banner-soporte.png);
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-size: cover; */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: var(--texto-secundario);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+.banner h1 {
+  font-size: 2.9rem;
+  font-family: var(--texto-secundario);
+  letter-spacing: 3px;
+  backdrop-filter: blur(30px);
+}
+
+.banner h2 {
+  font-size: 1.9rem;
+  font-weight: 100;
+  backdrop-filter: blur(30px);
+}
+
+.banner button {
+  font-size: 1.4rem;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  background-color: #3e7aea;
+  cursor: pointer;
+  font-family: var(--texto-secundario);
+  border: 3px solid white;
+  margin-top: .6rem;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner button:hover {
+ 
+  background-color: blue;
+  
+}
+
+/*   --------------  INFO JARDIN  -------------   */
+
+.info-jardin {
+  margin-bottom: 100px;
+}
+
+.info-titulo {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #3e7aea;
+  font-family: var(--texto-principal);
+}
+
+.info-descripcion {
+  width: 70%;
+  display: flex;
+  padding-bottom: 40px;
+  margin: auto;
+  text-align: center;
+  font-family: Comic Neue;
+color: #5d7ab1;
+}
+
+.info-imagen {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 32px;
+}
+.info-imagen img {
+  width: 300px;
+  height: 300px;
+}
+
+/*   --------------  FOOTER  -------------   */
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  gap: 2rem;
+  font-family: Caveat;
+  color: rgb(32 138 74);
+  background-color: rgb(203, 236, 232);
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+ 
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    gap: .5rem;
+}
+/*   --------------  WHATSAPP  -------------   */
+
+.btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 55px;
+  bottom:23px;
+  right:12px;
+  background:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:60px;
+  box-shadow: 8px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+  }
+
+  .btn-wsp:hover{
+    background: #38a762;
+ }
+ 
+
+ /*   --------------  NOSOTROS  -------------   */
+
+ .nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+ }
+
+ .titulo-nosotros {
+  width: 50%;
+  /* height: 70px; */
+  display: flex;
+  padding-bottom: 40px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  color: rgb(32 138 74);
+  font-family: var(--color-principal);
+}
+
+.description-nosotros {
+  width: 40%;
+  display: flex;
+  padding-bottom: 40px;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: Comic Neue;
+  color: rgb(32 138 74);
+  gap: 1rem;
+}
+
+ .nosotros .imagen-nosotros img{
+  width: 60%;
+ }
+
+ .nosotros .imagen-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+ }
+
+  /*   --------------  SERVICIOS  -------------   */
+
+  .servicios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .servicios .imagen-diseno {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .servicios .imagen-diseno img {
+    width: 80%;
+  }
+  .servicios .imagen-diseno iframe {
+    width: 90%;
+  }
+
+  .servicios .diseno-info{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    justify-content: center;
+    padding-top: 2rem ;
+    gap: .5rem;
+    
+    
+  }
+
+  .titulo-diseno{
+    color: rgb(32 138 74);
+  font-weight: bold;
+  font-size: .9rem;
+  font-family: var(--texto-principal);
+  letter-spacing: 1px;
+  text-align: center;
+
+  }
+
+  .check{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding-top: 10px;
+  }
+
+  .descripcion-diseno{
+    font-family: Comic Neue;
+    text-align: justify;
+    font-size: .9rem;
+    gap: .8rem;
+  }
+
+  .descripcion-diseno .comentario{
+    background-color: #3e7aea;
+    padding: .7rem;
+    border-radius: 1rem;
+    color: white;
+  }
+
+  .descripcion-diseno .comentario span{
+   color: rgb(0, 217, 255);
+   font-size: 1rem;
+  }
+
+
+  /*   --------------  CONTACTO  -------------   */
+
+  .nosotros .mapa {
+    padding-top: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  .nosotros .mapa iframe {
+    width: 90%;
+  }
+
+   /*   --------------  FORMULARIO DE CONTACTO  -------------   */
+
+   form{
+    width: 50%;
+   display: flex;
+    background-color: rgba(43, 69, 99, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    font-family: Comic Neue;
+}
+::placeholder {
+  font-family: Comic Neue;
+  color: rgb(41, 196, 101);
+  
+}
+.formulario .imagen-diseno {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.form-contacto{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  gap:1.5rem;
+  margin-bottom: .8rem;
+}
+
+.form-entrada{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.formulario .formulario-diseno img {
+  width: 80%;
+  height: 70%;
+}
+
+.formulario-diseno{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario{
+  display: flex;
+  width: 100%;
+  padding: 5px 10px;
+  justify-content: start;
+  padding-top: 2rem ;
+  gap: .5rem;
+  
+
+}
+.info-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 90%;
+    padding-top: 1rem;
+ 
+}
+.titulo-form {
+ 
+    height: 50px;
+    font-size: 2rem;
+   
+}
+.nombre-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: .8rem;
+ 
+}
+
+.nombre,.email,.telefono,.ciudad,.select,.radio{
+    width: 50%;
+    height: 35px;
+}
+
+.select,.radio,.check-box, submit {
+  display: flex;
+  width: 50%;
+  height: 35px;
+  font-family: Comic Neue;
+  color: rgb(41, 196, 101);
+}
+
+.check-box{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: .1rem;
+}
+.info-form textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.info-form .button{
+    width: 100px;
+   height: 30px;
+}
+
+@media (max-width: 850px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  body{
+    padding-top: 150px;
+}
+  .banner{
+    padding-top: 150px;
+  }
+  .menu ul li a{
+    font-size: .7rem;
+  }
+
+  .logo {
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .logo img{
+    width: 170px;
+    height: 120px;
+   
+  }
+
+  .menu ul {
+    gap: .9rem;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column-reverse;
+   gap: .2rem;
+   padding: 5px 5px;
+  }
+
+  .nosotros {
+    width: 100%;
+    padding: 40px 0px;
+    gap: 2rem;
+  }
+
+  .nosotros .titulo-nosotros{
+    width: 75%;
+  }
+  .nosotros .description-nosotros{
+    width: 65%;
+    gap: 1.2rem;
+  }
+
+  .nosotros .imagen-nosotros {
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+
+
+
+}
+
+@media (max-width: 700px){
+  .servicios{
+padding:0rem 1rem;
+  }
+
+  .titulo-diseno{
+    font-size: .7rem;
+  }
+
+  .descripcion-diseno{
+    font-size: .7rem;
+  }
+  .formulario{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .form-entrada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+
+  }
+  .formulario-diseno{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.radio{
+  justify-content: space-around;
+}
+ }
+@media (max-width: 550px){
+  .footer h3 {
+    font-size: 1rem;
+  }
+  .footer .redes {
+    font-size: 1rem;
+  }
+
+  .servicios{
+    grid-template-columns: 1fr;
+    
+  }
+  .servicios:nth-child(2n){
+    
+   display: flex;
+   flex-direction: column-reverse;
+  }
+
+  .nombre-email{
+    flex-direction: column;
+    width: 100%;
+  }
+  
+.nombre,.email,.telefono,.ciudad,.select,.radio{
+  width: 100%;
+}
+
+.select,.radio,.check-box, submit {
+width: 100%;
+}
+
+.check-box{
+width: 100%;
+}
+
+
+}
