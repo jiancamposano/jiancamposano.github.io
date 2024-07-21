@@ -146,6 +146,8 @@ a {
   margin-bottom: 10px;
   color: #3e7aea;
   font-family: var(--texto-principal);
+  letter-spacing: 5px;
+  font-size: 1.2rem;
 }
 
 .info-descripcion {
@@ -156,6 +158,7 @@ a {
   text-align: center;
   font-family: Comic Neue;
 color: #5d7ab1;
+letter-spacing: 1px;
 }
 
 .info-imagen {
@@ -182,8 +185,8 @@ color: #5d7ab1;
   padding: 1rem;
   gap: 2rem;
   font-family: Caveat;
-  color: rgb(32 138 74);
-  background-color: rgb(203, 236, 232);
+  color: white;
+  background-color: var(--color-principal);;
 }
 
 .footer h3 {
@@ -240,7 +243,8 @@ color: #5d7ab1;
   margin: auto;
   text-align: center;
   justify-content: center;
-  color: rgb(32 138 74);
+  letter-spacing: 1px;
+
   font-family: var(--color-principal);
 }
 
@@ -253,8 +257,9 @@ color: #5d7ab1;
   text-align: center;
   justify-content: center;
   font-family: Comic Neue;
-  color: rgb(32 138 74);
+  color: #0082ff;
   gap: 1rem;
+  letter-spacing: 1px;
 }
 
  .nosotros .imagen-nosotros img{
@@ -541,7 +546,11 @@ padding:0rem 1rem;
   .titulo-diseno{
     font-size: .7rem;
   }
-
+  .info-titulo {
+    
+    font-size: .8rem;
+    text-align: center;
+}
   .descripcion-diseno{
     font-size: .7rem;
   }
@@ -574,6 +583,11 @@ padding:0rem 1rem;
   .footer h3 {
     font-size: 1rem;
   }
+  .info-titulo {
+    
+    font-size: .8rem;
+    text-align: center;
+}
   .footer .redes {
     font-size: 1rem;
   }
