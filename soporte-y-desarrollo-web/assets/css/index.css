@@ -534,11 +534,7 @@ letter-spacing: 1px;
     padding-bottom: 5px;
   }
 
-  .banner {
- 
-    height: 500px;
-  
-  }
+
 
 }
 
@@ -582,11 +578,7 @@ padding:0rem 1rem;
 .radio{
   justify-content: space-around;
 }
-.banner {
- 
-  height: 500px;
 
-}
  }
 @media (max-width: 550px){
   .footer h3 {
@@ -600,11 +592,7 @@ padding:0rem 1rem;
   .footer .redes {
     font-size: 1rem;
   }
-  .banner {
  
-    height: 500px;
-  
-  }
   .servicios{
     grid-template-columns: 1fr;
     
