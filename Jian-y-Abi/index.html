@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Historia de Amor</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="amor.png" type="image/x-icon">
+        <style>
+            body {
+                background-color: #fef6e4;
+                color: #333;
+                background-image: url('romantica.jpg');
+                font-family: 'Dancing Script', cursive;
+ 
+            }
+            .landing-romantica {
+                
+    }
+            
+
+            header {
+                background-color: #d93829;
+                color: white;
+                text-align: center;
+                padding: 20px;
+               
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .heart {
+    display: block;
+    margin: 20px auto;
+    width: 130px; /* Aumentamos ligeramente el tamaño del corazón */
+    height: 130px;
+    background-color: red;
+    
+    margin-top: 100px;
+    margin-bottom: 80px;
+    position: relative;
+    animation: beat 1s infinite;
+   
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 130px; /* Aumentamos el tamaño de los círculos */
+    height: 130px;
+    background-color: red;
+    border-radius: 50%;
+    top: 0;
+}
+
+.heart::before {
+    left: 65px;
+}
+
+.heart::after {
+    top: -65px;
+    left: 0;
+}
+
+/* Estilo para las letras */
+.heart .initials-left,
+.heart .initials-right {
+    position: absolute;
+    top: 40%; /* Ajuste para colocar las letras más cerca del centro */
+    font-size: 40px; /* Tamaño de las letras */
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transform: translateY(-50%); /* Centra verticalmente */
+}
+
+/* Posición de la letra "J" a la izquierda */
+.heart .initials-left {
+    left: 37%; /* Ajuste de la distancia de la izquierda */
+    top: -25%;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+/* Posición de la letra "A" a la derecha */
+.heart .initials-right {
+  right: 19%;
+    transform: rotate(45deg);
+    top: 23%;
+    z-index: 3;
+    left: 104%;
+    bottom: 113%;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-45deg);
+    }
+    100% {
+        transform: scale(1) rotate(-45deg);
+    }
+}
+
+
+
+            .section-title {
+                margin-bottom: 30px;
+                font-size: 2rem;
+                color: #ec1d0b;
+            }
+
+            footer {
+                background-color: #ec1d0b;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 20px;
+            }
+            .letter-spacing {
+                letter-spacing: 2px; 
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="fw-bold">Nuestra Historia de Amor</h1>
+            <h3 class="fw-bold">Jian y Abigail</h3>
+        </header>
+
+        <div class="heart">
+          <span class="initials-left">J</span>
+          <span class="initials-right">A</span>
+        </div>
+
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- Card 1 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="love1.jpeg" class="card-img-top" alt="Imagen 1">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold" >"Tarde de Cine y Magia"</h5>
+                    <p class="card-text text-justify" style="text-align: justify;"">Un día perfecto para perderse en la pantalla grande, abrazados por la magia del cine. Risueñas miradas y palomitas compartidas, haciendo que cada momento sea único. La película fue solo el principio de una historia inolvidable.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="love4.jpeg" class="card-img-top" alt="Imagen 2">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">"Escapada Romántica a la Playa"</h5>
+                    <p class="card-text text-justify" style="text-align: justify;">Bajo el cálido sol y el susurro constante de las olas, caminamos descalzos sobre la suave arena, dejando huellas que se mezclan con las del viento.
+                        La brisa marina acaricia nuestros rostros y despeina nuestros sueños mientras las risas fluyen entre miradas que lo dicen todo.
+                        Nos perdemos juntos en el horizonte, ese lugar donde el cielo se une con el mar, rodeados de una paz infinita que solo tú y yo comprendemos.
+                        El sonido del mar parece acompañar nuestras palabras no dichas, convirtiéndose en una melodía que envuelve nuestros corazones.
+                        Es un día eterno, un instante fuera del tiempo, donde el amor florece entre la inmensidad del océano y la magia de estar contigo.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="love5.jpeg" class="card-img-top" alt="Imagen 3">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">"Aventuras en un Pueblo"</h5>
+                    <p class="card-text text-justify descripcion" style="text-align: justify;"">Recorremos sus calles llenas de historia, perdiéndonos en cada rincón pintoresco. La tranquilidad del lugar nos envuelve mientras compartimos miradas y sonrisas. Un viaje único donde cada momento juntos se convierte en un hermoso recuerdo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Sección de Video -->
+            <div class="container my-5">
+                <!-- Sección con dos cards -->
+                <div class="row">
+                  <!-- Card 1 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card">
+                      <video class="card-img-top" autoplay loop muted style="height: 450px; object-fit: cover;">
+                        <source src="video-love-2.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Risas y Amor en el Parque</h5>
+                        <p class="card-text">Entre vueltas y emociones, nuestros corazones laten al mismo ritmo que las atracciones. Cada sonrisa y cada mirada compartida hacen que la magia del día sea inolvidable. Juntos, convertimos la diversión en amor eterno.</p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Card 2 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card">
+                      <video class="card-img-top" autoplay loop muted style="height: 450px; object-fit: cover;">
+                        <source src="video-love.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                      </video>
+                      <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">Amor en el Castillo de Segovia</h5>
+                        <p class="card-text">Bajo las imponentes torres de Segovia, nuestras miradas se cruzan mientras exploramos cada rincón del castillo. Sentimos la grandeza del lugar y la tranquilidad de estar juntos en un viaje que se queda grabado en la memoria. Segovia nos recuerda que, aunque todo cambie, hay momentos que permanecen.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Sección de Escritura -->
+            <div class="container my-5">
+            <section class="my-5">
+                <h2 class="section-title text-center fw-bold fs-1">Momentos Junto a mi Pareja</h2>
+                <p class=" card text-center fs-5 p-4">
+                    "Cada momento a tu lado se siente real, como si el mundo se ajustara a lo que somos juntos, sin filtros ni pretensiones.
+                    Tus risas me recuerdan que la felicidad no siempre es grandiosa, a veces está en lo simple, en lo cotidiano.
+                    Cuando nuestras manos se tocan, no es magia, es confianza, y esa certeza de que pase lo que pase, estamos el uno para el otro.
+                    A veces no hablamos mucho, pero en esos silencios compartidos encuentro la paz que necesito."<br>
+               
+                    "Somos imperfectos, pero construimos algo que es nuestro, único, lleno de días buenos y días de aprendizaje.
+                    Y en cada paso juntos, más que promesas, hacemos que lo que tenemos sea sincero y verdadero."
+                </p>
+            </section>
+            </div>
+        </div>
+
+        <footer> 
+            <p class="fw-bold letter-spacing fs-3">Con todo nuestro amor, Jian y Abigail</p>
+            <p class="fw-bold letter-spacing fs-5"> 03/09/23</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
