@@ -38,7 +38,7 @@
     height: 130px;
     background-color: red;
     
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 80px;
     position: relative;
     animation: beat 1s infinite;
@@ -138,6 +138,27 @@
   .letter-spacing {
                 letter-spacing: 2px; 
             }
+             /* Estilo del botón */
+        #play-button {
+            /*display: none; /* Oculto inicialmente */
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 30px;
+            background-color: #ff4757;
+            color: white;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        #play-button:hover {
+            background-color: #e84118;
+        }
            
         </style>
 
@@ -152,6 +173,9 @@
               <source src="iñigo quintero - QueNoSé a DóndeVoy, No Es Real (Music Video).mp3" type="audio/mpeg">
               Tu navegador no soporta la reproducción de audio.
           </audio>
+           <!-- Botón de reproducción -->
+    <button id="play-button">Click Princesita &#x1F498 &#128152</button>
+
         </header>
 
         <div class="heart">
@@ -255,20 +279,26 @@
             <p class="fw-bold letter-spacing fs-5"> 03/09/23</p>
         </footer>
         <script>
-          // JavaScript para forzar reproducción en móviles
           document.addEventListener('DOMContentLoaded', function () {
               const audio = document.getElementById('background-audio');
-              
-              // Asegurarse de que el audio inicie en móviles tras alguna interacción mínima
-              function playAudio() {
-                  audio.play().catch(error => {
-                      console.log("El navegador bloqueó el autoplay:", error);
-                  });
-                  document.removeEventListener('click', playAudio); // Desactivar después de la interacción
-              }
+              const playButton = document.getElementById('play-button');
   
-              // Agregar listener para móviles
-              document.addEventListener('click', playAudio);
+              // Intentar reproducir automáticamente
+              audio.play().catch(error => {
+                  console.log("El autoplay fue bloqueado:", error);
+                  // Mostrar el botón si el autoplay falla
+                  playButton.style.display = 'block';
+              });
+  
+              // Reproducir música al hacer clic en el botón
+              playButton.addEventListener('click', function () {
+                  audio.play().then(() => {
+                      console.log("Audio reproducido tras el clic.");
+                      playButton.style.display = 'none'; // Ocultar botón tras la reproducción
+                  }).catch(err => {
+                      console.log("Error al reproducir el audio:", err);
+                  });
+              });
           });
       </script>
 
