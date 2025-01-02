@@ -147,7 +147,7 @@
         <header>
             <h1 class="fw-bold">Nuestra Historia de Amor</h1>
             <h3 class="fw-bold">Jian y Abigail</h3>
-            <audio id="background-audio" autoplay loop muted>
+            <audio id="background-audio" autoplay loop>
               <source src="iñigo quintero - QueNoSé a DóndeVoy, No Es Real (Music Video).mp3" type="audio/mpeg">
               Tu navegador no soporta la reproducción de audio.
           </audio>
@@ -254,14 +254,20 @@
             <p class="fw-bold letter-spacing fs-5"> 03/09/23</p>
         </footer>
         <script>
+          // JavaScript para forzar reproducción en móviles
           document.addEventListener('DOMContentLoaded', function () {
               const audio = document.getElementById('background-audio');
               
-              // Intentar quitar "muted" después de cargar la página
-              audio.muted = false; // Activar sonido
-              audio.play().catch(error => {
-                  console.log("El navegador bloqueó el autoplay con sonido:", error);
-              });
+              // Asegurarse de que el audio inicie en móviles tras alguna interacción mínima
+              function playAudio() {
+                  audio.play().catch(error => {
+                      console.log("El navegador bloqueó el autoplay:", error);
+                  });
+                  document.removeEventListener('click', playAudio); // Desactivar después de la interacción
+              }
+  
+              // Agregar listener para móviles
+              document.addEventListener('click', playAudio);
           });
       </script>
 
