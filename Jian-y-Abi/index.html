@@ -73,27 +73,42 @@
     font-size: 40px; /* Tamaño de las letras */
     color: white;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    
     transform: translateY(-50%); /* Centra verticalmente */
 }
 
 /* Posición de la letra "J" a la izquierda */
 .heart .initials-left {
-    left: 37%; /* Ajuste de la distancia de la izquierda */
-    top: -25%;
+    left: 37%;
+    top: -11%;
     z-index: 2;
     transform: rotate(45deg);
 }
 
+
+
 /* Posición de la letra "A" a la derecha */
 .heart .initials-right {
-  right: 19%;
+    right: -30%;
     transform: rotate(45deg);
-    top: 23%;
+    top: 51%;
     z-index: 3;
     left: 104%;
     bottom: 113%;
+
 }
+.heart .number {
+    position: absolute;
+    bottom: 29px;
+    left: 29%;
+    
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+
+
 
 @keyframes beat {
     0% {
@@ -122,9 +137,7 @@
   .letter-spacing {
                 letter-spacing: 2px; 
             }
-            audio {
-              
-            }
+           
         </style>
 
 
@@ -134,7 +147,7 @@
         <header>
             <h1 class="fw-bold">Nuestra Historia de Amor</h1>
             <h3 class="fw-bold">Jian y Abigail</h3>
-            <audio src="iñigo quintero - QueNoSé a DóndeVoy, No Es Real (Music Video).mp3" type="audio"  autoplay >
+            <audio src="iñigo quintero - QueNoSé a DóndeVoy, No Es Real (Music Video).mp3" type="audio/mp3"  autoplay >
              
              </audio>
         </header>
@@ -142,6 +155,8 @@
         <div class="heart">
           <span class="initials-left">J</span>
           <span class="initials-right">A</span>
+          <div class="number">03</div> <!-- Nuevo elemento para el "03" -->
+          <div>03</div>
         </div>
 
         <div class="container my-5">
