@@ -147,7 +147,7 @@
         <header>
             <h1 class="fw-bold">Nuestra Historia de Amor</h1>
             <h3 class="fw-bold">Jian y Abigail</h3>
-            <audio id="background-audio" autoplay loop>
+            <audio id="background-audio" autoplay loop muted>
               <source src="iñigo quintero - QueNoSé a DóndeVoy, No Es Real (Music Video).mp3" type="audio/mpeg">
               Tu navegador no soporta la reproducción de audio.
           </audio>
@@ -207,7 +207,7 @@
                     <div class="card">
                       <video class="card-img-top" autoplay loop muted style="height: 450px; object-fit: cover;">
                         <source src="video-love-2.mp4" type="video/mp4" muted>
-                        Tu navegador no soporta el video.
+                        
                       </video>
                       <div class="card-body">
                         <h5 class="card-title text-center fw-bold">Risas y Amor en el Parque</h5>
@@ -221,7 +221,7 @@
                     <div class="card">
                       <video class="card-img-top" autoplay loop muted style="height: 450px; object-fit: cover;">
                         <source src="video-love.mp4" type="video/mp4" muted>
-                        Tu navegador no soporta el video.
+                      
                       </video>
                       <div class="card-body">
                         <h5 class="card-title text-center fw-bold">Amor en el Castillo de Segovia</h5>
@@ -254,20 +254,14 @@
             <p class="fw-bold letter-spacing fs-5"> 03/09/23</p>
         </footer>
         <script>
-          // JavaScript para forzar reproducción en móviles
           document.addEventListener('DOMContentLoaded', function () {
               const audio = document.getElementById('background-audio');
               
-              // Asegurarse de que el audio inicie en móviles tras alguna interacción mínima
-              function playAudio() {
-                  audio.play().catch(error => {
-                      console.log("El navegador bloqueó el autoplay:", error);
-                  });
-                  document.removeEventListener('click', playAudio); // Desactivar después de la interacción
-              }
-  
-              // Agregar listener para móviles
-              document.addEventListener('click', playAudio);
+              // Intentar quitar "muted" después de cargar la página
+              audio.muted = false; // Activar sonido
+              audio.play().catch(error => {
+                  console.log("El navegador bloqueó el autoplay con sonido:", error);
+              });
           });
       </script>
 
